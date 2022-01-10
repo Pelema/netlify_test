@@ -1,0 +1,66 @@
+{
+  "name": "cbi",
+  "version": "1.0.0",
+  "description": "Crypto Based Innovation (CBI) Web Application",
+  "author": "Crypto Based Innovation",
+  "homepage": "https://www.cbi.com",
+  "copyright": "Copyright 2021 - Crypto Based Innovation",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "contracts": "file:./smart_contracts/build/contracts",
+    "react": "^16.12.0",
+    "react-dom": "^16.8.6",
+    "react-hook-form": "^7.22.5",
+    "react-modal": "^3.14.4",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.3.1",
+    "reactstrap": "^9.0.1",
+    "web3": "^1.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 9",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=8.10",
+    "npm": ">=6"
+  },
+  "devDependencies": {
+    "flag-icon-css": "^4.1.5"
+  }
+}
